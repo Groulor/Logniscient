@@ -10,27 +10,12 @@ Sa mission : **transformer l'analyse manuelle des logs réseau (Zeek) en un proc
 
 ---
 
-## 🚀 Fonctionnalités
-- Détection des comportements malveillants à partir de logs.
-- Automatisation de l'analyse et classification des connexions suspectes.
-- Interface intuitive pour associer les colonnes des logs au modèle d'analyse.
-
----
-
-## 🛠️ Technologies utilisées
-- **Langage** : Python
-- **Machine Learning** : LightGBM
-- **Traitement des logs** : Pandas
-- **Visualisation** : Matplotlib / Seaborn
-
----
-
 ## 🚀 Enjeux & Performance (Contexte EC2)
 
-Lors de compétitions de type **CTF (Capture The Flag)** ou **EC2**, la réactivité est le facteur clé de succès. **Logniscient** répond à ces exigences critiques par :
+Lors de compétitions de type **CTF (Capture The Flag)** ou **EC2**, la réactivité et la précision est le facteur clé de succès. **Logniscient** répond à ces exigences critiques par :
 
 * **Détection de Cyber-Fraude :** Identification proactive de patterns de fraude réseau, d'exfiltration de données et de scans furtifs.
-* **Triage Automatisé :** Classification en temps réel des flux malveillants avec un score de probabilité précis, permettant une priorisation immédiate des incidents.
+* **Triage Automatisé :** Classification en temps réel des flux malveillants avec un score de probabilité, permettant une priorisation immédiate des incidents.
 * **Flexibilité Opérationnelle :** Interface de *mapping* dynamique des colonnes pour une compatibilité universelle avec les formats de logs (CSV, Zeek, Bro).
 
 ---
@@ -40,8 +25,10 @@ Lors de compétitions de type **CTF (Capture The Flag)** ou **EC2**, la réactiv
 Le projet repose sur une architecture combinant puissance de calcul et ergonomie :
 
 * **Modèle ML :** Implémentation d'un classifieur **LightGBM** (Gradient Boosting) optimisé pour la détection d'anomalies sur des *datasets* à haute volumétrie.
-* **Pipeline Data :** Nettoyage et *Feature Engineering* avancés via **Pandas** (analyse des états de connexion, séquençage du handshake et métriques de flux).
+* **Pipeline Data :** Nettoyage et *Feature Engineering* via **Pandas** (analyse des états de connexion, séquençage du handshake et métriques de flux).
 * **GUI :** Développement d'une interface intuitive conçue pour l'efficacité opérationnelle et la prise de décision rapide en conditions de stress.
+
+---
 
 ## 📂 Installation
 
